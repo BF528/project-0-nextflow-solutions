@@ -29,7 +29,7 @@ workflow {
     
     SAMTOOLS_FAIDX.out.join(EXTRACT_REGION.out)
     | set{ subset_ch }
-x
+
     SAMTOOLS_FAIDX_SUBSET(subset_ch)
 
 
